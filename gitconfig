@@ -1,0 +1,8 @@
+[user]
+	name = Géza Búza
+	email = bghome@gmail.com
+	signingkey = F0C4BE0DA921F597
+[core]
+	editor = vim
+[gpg]
+	program = gpg2

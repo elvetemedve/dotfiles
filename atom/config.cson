@@ -1,0 +1,14 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "383f8356-9729-4734-ba1b-3b54c3b7fc64"
+  core:
+    telemetryConsent: "limited"
+  editor:
+    preferredLineLength: 120
+    tabLength: 4
+  "exception-reporting":
+    userId: "ba20e95e-8f2e-57d2-6b7d-36eee7975f1b"
+  "tree-view": {}
+  welcome:
+    showOnStartup: false
