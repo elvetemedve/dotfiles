@@ -1,0 +1,9 @@
+[user]
+	name = Géza Búza
+	email = gbuza@inviqa.com
+	signingkey = F0C4BE0DA921F597
+[core]
+	editor = vim
+	autocrlf = input
+[gpg]
+	program = gpg2
