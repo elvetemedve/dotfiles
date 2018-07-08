@@ -11,6 +11,7 @@ noblacklist ${HOME}/.config/Slack
 noblacklist ${HOME}/Downloads
 noblacklist ~/.config/google-chrome
 noblacklist ~/.cache/google-chrome
+noblacklist /var
 
 include /etc/firejail/disable-common.inc
 include /etc/firejail/disable-devel.inc
