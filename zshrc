@@ -51,7 +51,7 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras vagrant colored-man sudo screen docker symfony2)
+plugins=(git git-extras vagrant colored-man-pages sudo screen docker symfony2 gpg-agent)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
@@ -59,7 +59,7 @@ source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # User configuration
 
-export PATH=$HOME/bin:$PATH
+export PATH=$HOME/bin:$PATH:$HOME/.local/bin
 export MANPATH="/usr/local/man:$MANPATH"
 export TERM="xterm-256color"
 
