@@ -9,6 +9,9 @@
     tabLength: 4
   "exception-reporting":
     userId: "ba20e95e-8f2e-57d2-6b7d-36eee7975f1b"
+  "linter-golinter":
+    golintExecutablePath: "golint"
+  "linter-ui-default": {}
   "tree-view": {}
   welcome:
     showOnStartup: false

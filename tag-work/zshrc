@@ -53,18 +53,20 @@ DISABLE_AUTO_UPDATE="true"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-extras vagrant colorize colored-man sudo screen docker symfony2)
+plugins=(git git-extras vagrant colorize colored-man-pages sudo screen docker symfony2)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /etc/profile.d/vte.sh
+source /usr/share/nvm/init-nvm.sh
 #source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$HOME/.gem/bin:$HOME/.hem/gems/ruby/2.2.0/bin:/opt/hem/bin:/opt/hem/embedded/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$HOME/.composer/vendor/bin:$HOME/.gem/bin:$HOME/.local/bin:$HOME/projects/go/bin:$PATH
 export MANPATH="/usr/local/man:$MANPATH"
 export TERM="xterm-256color"
+export GOPATH=$HOME/projects/go
 
 # Load environment variables containing private data
 source ~/.zshenv
@@ -75,6 +77,9 @@ export npm_config_jobs=9
 # Vagrant VM settings
 export VAGRANT_VM_CPUS=2
 export VAGRANT_VM_MEMORY=4096
+
+# Ruby
+eval "$(rbenv init -)"
 
 # command autocompletions
 fpath=(/usr/share/licenses/zsh-completions $fpath)
